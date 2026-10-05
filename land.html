@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="im"><img src="logo.png" alt=""></div>
+                <div class="brand">
+                    <h2>FindBack Ghana</h2>
+                    <p>Lost and Found</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#display">Explore</a>
+                    </li>
+                    <li>
+                        <a href="#browse">Browse</a>
+                    </li>
+                    <li>
+                        <a href="#how-it-works">How it works</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="log-sign" id="authArea">
+
+                <button>
+        <a href="login.html">Login</a>
+    </button>
+
+                <button>
+        <a href="signup.html">Sign Up</a>
+    </button>
+
+            </div>
+        </div>
+    </header>
+    <section class="display" id="display">
+        <div class="container">
+            <div class="dis">
+                <div class="info">
+
+                    <h1>Lost something? Let’s help find it faster.</h1>
+
+                    <p>Report your lost item on FindBack Ghana and connect with people who may have found it. Share the details, spread the word, and increase your chances of getting your item back.</p>
+                    <div class="btns">
+                        <button class="btn1">
+                            <a href="lost_form.html">
+                                <div>Report lost or Report found item</div>
+                                <div><i class="bi bi-arrow-right"></i></div>
+                            </a>
+                        </button>
+                        <button class="btn2">
+                            <a href="#browse">
+                                <div>Browse Reports</div>               
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="info-img">
+                    <img src="man.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <section class="browse" id="browse">
+        <div class="container">
+            <div class="browse-tittle">
+                <div>
+                    <h1>Browse lost & found items</h1>
+                </div>
+                <div class="search-area">
+                    <input type="text" placeholder="Search for item">
+                    <button type="submit"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
+            <div class="items" id="iTemscontainer">
+                <h1></h1>
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="how-tittle">
+                <p>SIMPLE PROCESS</p>
+                <h1>Turn a missing item into a searchable lead.</h1>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <h4>01</h4>
+                    <h3>Report</h3>
+                    <p>Describe what you lost or found, add a location and optional photo.</p>
+                </div>
+                <div class="step">
+                    <h4>02</h4>
+                    <h3>We compare</h3>
+                    <p>
+                        The platform analyzes item details and photos to identify possible matches</p>
+                </div>
+                <div class="step">
+                    <h4>03</h4>
+                    <h3>connect</h3>
+                    <p>Review potential matches and use the safe contact route to arrange verification.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="safety" id="safety">
+        <div class="container">
+            <div class="con">
+                <h2><i class="bi bi-shield-lock"></i></h2>
+                <h1>Privacy and safety come first.</h1>
+                <p>Do not publish PINs, passwords, full bank details or other sensitive information. For identity documents, sensitive fields should remain hidden. Always verify ownership before handing an item over.</p>
+            </div>
+        </div>
+    </section>
+    <section class="fooTer">
+        <div class="contain">
+            <div class="footer-heading">
+                <h1>FindBack Ghana</h1>
+                <h4>Lost and Found </h4>
+                <p>Helping people find lost items faster.</p>
+            </div>
+            <div class="footer-items">
+                <div class="footer-item">
+                    <ul>
+                        <h3>Quick Links</h3>
+                        <li>
+                            <a href="#display">Home</a>
+                        </li>
+                        <li>
+                            <a href="#browse">Browse Items</a>
+                        </li>
+                        <li>
+                            <a href="lost_form.html">Report an Item</a>
+                        </li>
+                        <li>
+                            <a href="#how-it-works">How it works</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h4>Help & Safety</h4>
+                    <p>Safety Tips</p>
+                    <p> Privacy Policy</p>
+                    <p>Terms of Use</p>
+                </div>
+                <div class="footer-item">
+                    <h4>Contact us</h4>
+                    <a href="mailto:turosunghaleem2002@gmail.com" class="mail">
+                        turosunghaleem2002@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div class="copy">© 2026 FindBack Ghana. All rights reserved.</div>
+        </div>
+    </section>
+    <script src="javascript.js"></script>
+    <!-- ITEM DETAILS POPUP -->
+    <div class="item-modal" id="itemModal">
+
+        <div class="item-modal-content">
+
+            <button class="close-modal" id="closeModal">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+            <h2>Item Details</h2>
+
+            <div class="modal-details">
+                <div class="detail">
+
+                    <p id="modalImage"></p>
+                </div>
+                <div class="detail">
+                    <span>ITEM</span>
+                    <p id="modalItemName"></p>
+                </div>
+
+                <div class="detail">
+                    <span>CATEGORY</span>
+                    <p id="modalCategory"></p>
+                </div>
+
+                <div class="detail">
+                    <span>LOCATION</span>
+                    <p id="modalLocation"></p>
+                </div>
+
+                <div class="detail">
+                    <span>DATE LOST</span>
+                    <p id="modalDate"></p>
+                </div>
+
+                <div class="detail">
+                    <span>DESCRIPTION</span>
+                    <p id="modalDescription"></p>
+                </div>
+
+                <div class="detail">
+                    <span>CONTACT</span>
+                    <p id="modalContact"></p>
+                </div>
+
+            </div>
+
+            <button class="modal-close-btn" id="modalCloseBtn">
+            Close
+        </button>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+<!--
+// ========================================
+// FINDBACK GHANA - LOST ITEM SYSTEM
+// ========================================
+
+
+// ========================================
+// 1. GET THE LOST ITEM FORM
+// ========================================
+
+const lostItemForm = document.getElementById("lostitemform");
+
+
+// ========================================
+// 2. SUBMIT LOST ITEM
+// ========================================
+
+if (lostItemForm) {
+
+    lostItemForm.addEventListener("submit", function(event) {
+
+        // Stop the form from refreshing the page
+        event.preventDefault();
+
+
+        // ========================================
+        // GET THE INFORMATION FROM THE FORM
+        // ========================================
+
+        const itemName =
+            document.getElementById("itemname").value.trim();
+        const reportType =
+            document.getElementById("report-type").value.trim();
+        const category =
+            document.getElementById("category").value;
+
+        const location =
+            document.getElementById("location").value.trim();
+
+        const date =
+            document.getElementById("date").value;
+
+        const description =
+            document.getElementById("description").value.trim();
+
+        const contact =
+            document.getElementById("contact").value.trim();
+
+        const imageFile =
+            document.getElementById("imgfile").files[0];
+
+
+        // ========================================
+        // CHECK THAT REQUIRED INFORMATION IS GIVEN
+        // ========================================
+
+        if (
+            itemName === "" ||
+            category === "" ||
+            location === "" ||
+            date === "" ||
+            description === "" ||
+            reportType === "" ||
+            contact === ""
+        ) {
+
+            alert("Please fill in all the required fields.");
+
+            return;
+        }
+
+
+        // ========================================
+        // CREATE THE ITEM
+        // ========================================
+
+        const lostItem = {
+
+            id: Date.now(),
+
+            itemName: itemName,
+
+            category: category,
+
+            location: location,
+
+            date: date,
+
+            description: description,
+
+            contact: contact,
+            reportType: reportType,
+
+            image: ""
+
+        };
+
+
+        // ========================================
+        // HANDLE IMAGE
+        // ========================================
+
+        if (imageFile) {
+
+            const reader = new FileReader();
+
+            reader.onload = function(event) {
+
+                lostItem.image = event.target.result;
+
+                saveLostItem(lostItem);
+
+            };
+
+            reader.readAsDataURL(imageFile);
+
+        } else {
+
+            saveLostItem(lostItem);
+
+        }
+
+    });
+
+}
+
+
+// ========================================
+// 3. SAVE THE LOST ITEM
+// ========================================
+
+function saveLostItem(lostItem) {
+
+    // Get existing lost items
+    let lostItems =
+        JSON.parse(localStorage.getItem("findbackLostItems")) || [];
+
+
+    // Add the new item
+    lostItems.push(lostItem);
+
+
+    // Save everything
+    localStorage.setItem(
+        "findbackLostItems",
+        JSON.stringify(lostItems)
+    );
+
+
+    // Tell the user it worked
+    alert("Your lost item has been reported successfully!");
+
+
+    // Send the user back to the display page
+    window.location.href = "land.html";
+
+}
+
+
+// ========================================
+// 4. DISPLAY LOST ITEMS
+// ========================================
+
+const itemsContainer =
+    document.getElementById("iTemscontainer");
+
+
+if (itemsContainer) {
+
+    displayLostItems();
+
+}
+
+
+function displayLostItems() {
+
+    // Get saved items
+    const lostItems =
+        JSON.parse(localStorage.getItem("findbackLostItems")) || [];
+
+
+    // Remove the temporary heading
+    itemsContainer.innerHTML = "";
+
+
+    // ========================================
+    // IF THERE ARE NO ITEMS
+    // ========================================
+
+    if (lostItems.length === 0) {
+
+        itemsContainer.innerHTML = `
+
+            <div class="no-items">
+
+                <h2>No lost items yet</h2>
+
+                <p>
+                    When someone reports a lost item,
+                    it will appear here.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    // ========================================
+    // DISPLAY EACH ITEM
+    // ========================================
+
+    lostItems.forEach(function(item) {
+
+
+        // Create card
+        const card =
+            document.createElement("div");
+
+
+        card.classList.add("item-card");
+
+
+        // ========================================
+        // IMAGE
+        // ========================================
+
+        let imageHTML = "";
+
+        if (item.image) {
+
+            imageHTML = `
+                <img
+                    src="${item.image}"
+                    alt="${item.itemName}"
+                    class="item-image"
+                >
+            `;
+
+        } else {
+
+            imageHTML = `
+                <div class="no-image">
+                    <i class="bi bi-image"></i>
+                </div>
+            `;
+
+        }
+
+
+        // ========================================
+        // FORMAT DATE
+        // ========================================
+
+        let formattedDate = item.date;
+
+        if (item.date) {
+
+            const dateObject =
+                new Date(item.date);
+
+            formattedDate =
+                dateObject.toLocaleDateString(
+                    "en-GB", {
+                        day: "numeric",
+                        month: "long",
+                        year: "numeric"
+                    }
+                );
+
+        }
+
+
+        // ========================================
+        // CREATE CARD HTML
+        // ========================================
+
+        card.innerHTML = `
+
+            ${imageHTML}
+
+            <div class="item-card-content">
+
+                <span class="item-category">
+                    ${item.reportType}
+                </span>
+
+                <h2>
+                    ${item.itemName}
+                </h2>
+
+                <p>
+                    <i class="bi bi-geo-alt"></i>
+                    ${item.location}
+                </p>
+
+                <p>
+                    <i class="bi bi-calendar3"></i>
+                    ${formattedDate}
+                </p>
+
+                <p class="item-description">
+                    ${item.description}
+                </p>
+
+                <button
+                    class="view-item"
+                    onclick="viewLostItem(${item.id})"
+                >
+                    View Details
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+
+            </div>
+
+        `;
+
+
+        // Add card to the page
+        itemsContainer.appendChild(card);
+
+    });
+
+}
+
+
+// ========================================
+// 5. VIEW ITEM DETAILS
+// ========================================
+
+function viewLostItem(itemId) {
+
+    const lostItems =
+        JSON.parse(
+            localStorage.getItem("findbackLostItems")
+        ) || [];
+
+
+    const item =
+        lostItems.find(function(item) {
+
+            return item.id === itemId;
+
+        });
+
+
+    if (!item) {
+
+        alert("Item could not be found.");
+
+        return;
+
+    }
+
+
+    // Show the item's information
+    alert(
+
+        "ITEM: " + item.itemName +
+
+        "\n\nCATEGORY: " + item.category +
+
+        "\n\nLOCATION: " + item.location +
+
+        "\n\nDATE LOST: " + item.date +
+
+        "\n\nDESCRIPTION: " + item.description +
+
+        "\n\nCONTACT: " + item.contact
+
+    );
+
+}
+document.addEventListener("DOMContentLoaded", function() {
+    const authArea = document.getElementById("authArea");
+
+    if (!authArea) return;
+
+    const userName = localStorage.getItem("findbackUserName");
+
+    if (userName) {
+        authArea.innerHTML = `
+            <div class="user-menu">
+                <button class="notification-btn" type="button" title="Notifications">
+                    <i class="bi bi-bell"></i>
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="user-profile">
+                    <div class="user-avatar">
+                        <i class="bi bi-person"></i>
+                    </div>
+                    <span>${userName}</span>
+                    <button class="logout-btn" id="logoutBtn" type="button">
+                        Log out
+                    </button>
+                </div>
+            </div>
+        `;
+
+        document.getElementById("logoutBtn").addEventListener("click", function() {
+            localStorage.removeItem("findbackUserName");
+            window.location.reload();
+        });
+    }
+});
+localStorage.setItem("findbackUserName", userName);
+window.location.href = "display.html";
+const userName = document.getElementById("fullname").value.trim();
+
+localStorage.setItem("findbackUserName", userName);
+window.location.href = "display.html";
+
+// =============================
+// LOGIN
+// =============================
+
+const loginForm = document.getElementById("loginForm");
+
+if (loginForm) {
+
+    loginForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const email = document.getElementById("loginEmail").value;
+
+        // Save login information
+        localStorage.setItem("findbackLoggedIn", "true");
+        localStorage.setItem("findbackUserName", email);
+
+        // Go to home page
+        window.location.href = "land.html";
+
+    });
+
+}
+
+// =============================
+// CHECK LOGIN STATUS
+// =============================
+
+const authArea = document.getElementById("authArea");
+
+if (authArea) {
+
+    const loggedIn = localStorage.getItem("findbackLoggedIn");
+    const userName = localStorage.getItem("findbackUserName");
+
+    if (loggedIn === "true") {
+
+        authArea.innerHTML = `
+
+            <div class="user-area">
+
+                <button class="notification-btn">
+                    <i class="bi bi-bell"></i>
+                </button>
+
+                <div class="user-profile">
+
+                    <div class="user-avatar">
+                        <i class="bi bi-person"></i>
+                    </div>
+
+                    <span>${userName}</span>
+
+                </div>
+
+                <button id="logoutBtn" class="logout-btn">
+                    Logout
+                </button>
+
+            </div>
+
+        `;
+
+        document
+            .getElementById("logoutBtn")
+            .addEventListener("click", function() {
+
+                localStorage.removeItem("findbackLoggedIn");
+                localStorage.removeItem("findbackUserName");
+
+                window.location.reload();
+
+            });
+
+    }
+
+}
+
+a
+-->

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <section class="lost_form">
+        <form action="" id="lostitemform">
+            <div class="container">
+                <h2>Report an item</h2>
+                <p>Give enough details for useful match</p>
+                <div class="report-type">
+                    <label for="repor-ype">What are you reporting?</label>
+                    <select id="report-type" required>
+                        <option value="Lost">Lost Item</option>
+                        <option value="Found">Found Item</option>
+                    </select>
+                </div>
+                <div class="inPuts">
+                    <div class="inPut">
+                        <label for="itemName">Item name</label><br>
+                        <input type="text" placeholder="e.g. black iphone 13" id="itemname">
+                    </div>
+                    <div class="inPut">
+                        <label for="category">Category</label><br>
+                        <select id="category">
+                            <option value="Phone">Phone</option>
+                            <option value="Laptop">Laptop</option>
+                            <option value="Documents">Documents</option>
+                            <option value="Card">Card</option>
+                            <option value="Wallet">Wallet</option>
+                            <option value="Bag">Bag</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inPuts">
+                    <div class="inPut">
+                        <label for="location">Location</label><br>
+                        <input type="text" placeholder="e.g. Circle, Accra" id="location">
+                    </div>
+                    <div class="inPut">
+                        <label for="date">Date</label><br>
+                        <input type="date" id="date">
+                    </div>
+                </div>
+                <div class="lost_discribtion">
+                    <label for="description">Description</label><br>
+                    <textarea name="" id="description" placeholder="Colour, brand, make, case, where you last saw it....."></textarea>
+                </div>
+                <div class="lost_contact">
+                    <label for="contact">Safe contact</label><br>
+                    <input type="tel" id="contact" placeholder="Phone for verification">
+                </div>
+                <div class="lost_file">
+
+                    <input type="file" id="imgfile">
+                </div>
+                <button type="submit" id="submitbutton">Submit</button> </div>
+        </form>
+    </section>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
