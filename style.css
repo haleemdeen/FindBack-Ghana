@@ -194,6 +194,21 @@ header .log-sign button a {
     height: 400px;
 }
 
+.possible-matches {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.possible-matches h1 {
+    font-family: poppins;
+    font-weight: 900;
+}
+
 .browse {
     width: 100%;
     height: auto;
@@ -201,6 +216,11 @@ header .log-sign button a {
     justify-content: center;
     align-items: center;
     background-color: white;
+}
+
+.browse .container {
+    height: 100%;
+    border-bottom: 2px solid #ccc;
 }
 
 .container {
@@ -418,6 +438,290 @@ header .log-sign button a {
 }
 
 
+/* ========================================
+   POSSIBLE MATCH CARD
+======================================== */
+
+.possible-matches-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+
+/* MATCH CARD */
+
+.possible-match-card {
+    background: #FFFCFB;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 300px;
+    height: 550px;
+}
+
+
+/* HOVER */
+
+.possible-match-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* IMAGE */
+
+.possible-match-image,
+.possible-match-no-image {
+    width: 100%;
+    min-width: 220px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.possible-match-no-image {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f3f5;
+    color: #9ca3af;
+    font-size: 45px;
+}
+
+
+/* CARD CONTENT */
+
+.possible-match-content {
+    padding: 22px;
+    flex: 1;
+}
+
+
+/* MATCH LABEL */
+
+.match-label {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #0b5ed7;
+    color: #e8f1ff;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+/* ITEM NAME */
+
+.possible-match-content h2 {
+    margin: 0 0 12px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #222;
+}
+
+
+/* DETAILS */
+
+.possible-match-content p {
+    margin: 7px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.possible-match-content p i {
+    margin-right: 6px;
+    color: #0b5ed7;
+}
+
+
+/* MATCH PERCENTAGE */
+
+.possible-match-content p strong {
+    color: #222;
+}
+
+
+/* DESCRIPTION */
+
+.possible-match-description {
+    margin-top: 14px !important;
+    line-height: 1.5;
+    color: #777 !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+/* NO MATCH */
+
+.no-matches {
+    text-align: center;
+    padding: 40px 20px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+}
+
+.no-matches h2 {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.no-matches p {
+    color: #777;
+}
+
+
+/* ========================================
+   CONTACT REPORTER BUTTON
+======================================== */
+
+.contact-reporter-btn {
+    margin-top: 18px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #0b5ed7;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-reporter-btn:hover {
+    background: #084298;
+    transform: translateY(-2px);
+}
+
+.contact-reporter-btn i {
+    margin-right: 7px;
+}
+
+
+/* ========================================
+   CONTACT MODAL
+======================================== */
+
+.contact-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.contact-modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 450px;
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.contact-modal-content h2 {
+    margin: 0 0 12px;
+    color: #222;
+}
+
+.contact-message {
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.close-contact-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: #0b5ed7;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+.close-contact-modal:hover {
+    background: #084298;
+}
+
+.contact-box {
+    background: #f5f8ff;
+    border: 1px solid #dbe7ff;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-box span {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 6px;
+}
+
+.contact-box p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0b5ed7;
+}
+
+.contact-close-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #0b5ed7;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.contact-close-btn:hover {
+    background: #084298;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+    .possible-matches-container {
+        grid-template-columns: 1fr;
+    }
+    .possible-match-card {
+        flex-direction: column;
+    }
+    .possible-match-image,
+    .possible-match-no-image {
+        width: 100%;
+        min-width: 100%;
+        height: 220px;
+    }
+    .possible-match-content {
+        padding: 18px;
+    }
+}
+
+
 /* ITEM CARD */
 
 .items {
@@ -545,12 +849,44 @@ header .log-sign button a {
     background: #084298;
 }
 
+
+/* ========================================
+   CONTACT REPORTER BUTTON
+======================================== */
+
+.contact-founder-btn {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #0b5ed7;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
 .view-item i {
     font-size: 16px;
 }
 
 
 /* ITEM DETAILS POPUP */
+
+.modal-image-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
 
 .item-modal {
     display: none;

@@ -1,0 +1,21 @@
+{
+  "name": "findback-ghana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haleemdeen/FindBack-Ghana.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/haleemdeen/FindBack-Ghana/issues"
+  },
+  "homepage": "https://github.com/haleemdeen/FindBack-Ghana#readme"
+}

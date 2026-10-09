@@ -82,6 +82,7 @@
         </div>
         </div>
     </section>
+
     <section class="browse" id="browse">
         <div class="container">
             <div class="browse-tittle">
@@ -97,6 +98,25 @@
                 <h1></h1>
             </div>
         </div>
+    </section>
+    <!-- POSSIBLE MATCHES -->
+    <section class="possible-matches" id="possibleMatchesSection">
+
+        <div class="container">
+
+            <div class="matches-title">
+
+                <h1>Possible matches</h1>
+
+                <p>We found something that may match your report.</p>
+
+            </div>
+
+            <div class="possible-matches-container" id="possibleMatchesContainer">
+            </div>
+
+        </div>
+
     </section>
     <section class="how-it-works" id="how-it-works">
         <div class="container">
@@ -188,9 +208,8 @@
             <h2>Item Details</h2>
 
             <div class="modal-details">
-                <div class="detail">
-
-                    <p id="modalImage"></p>
+                <div class="modal-image-container">
+                    <img id="modalImage" src="" alt="Item Image">
                 </div>
                 <div class="detail">
                     <span>ITEM</span>
@@ -225,6 +244,33 @@
             </div>
 
             <button class="modal-close-btn" id="modalCloseBtn">
+            Close
+        </button>
+
+        </div>
+
+    </div>
+    <!-- CONTACT REPORTER POPUP -->
+    <div class="contact-modal" id="contactModal">
+
+        <div class="contact-modal-content">
+
+            <button class="close-contact-modal" id="closeContactModal">
+            <i class="bi bi-x-lg"></i>
+        </button>
+
+            <h2>Contact Reporter</h2>
+
+            <p class="contact-message">
+                This person may have information about the item you are looking for. Please verify the item before sharing personal information.
+            </p>
+
+            <div class="contact-box">
+                <span>CONTACT</span>
+                <p id="reporterContact"></p>
+            </div>
+
+            <button class="contact-close-btn" id="contactCloseBtn">
             Close
         </button>
 
